@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+		<!--모바일화-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- title -->
+		<title>사랑을 진화시키다. RESERVATION</title>
+
+		<!-- favicon -->
+		<link rel="shortcut icon" type="image/png" href="assets/img/웨딩남녀.svg">
+		<!-- google font -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+		<!-- fontawesome -->
+		<link rel="stylesheet" href="assets/css/all.min.css">
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+		<!-- owl carousel -->
+		<link rel="stylesheet" href="assets/css/owl.carousel.css">
+		<!-- magnific popup -->
+		<link rel="stylesheet" href="assets/css/magnific-popup.css">
+		<!-- animate css -->
+		<link rel="stylesheet" href="assets/css/animate.css">
+		<!-- mean menu css -->
+		<link rel="stylesheet" href="assets/css/meanmenu.min.css">
+		<!-- main style -->
+		<link rel="stylesheet" href="assets/css/main_detailpage.css">
+		<!-- responsive -->
+		<link rel="stylesheet" href="assets/css/responsive.css">
+		<!--media query link-->
+		<link rel="stylesheet" type="text/css" media="screen" href="cssscreen.css">
+		<link rel="stylesheet" type="text/css" media="print" href="cssprint.css">
+		<!--fontawesome link-->
+		<script src="https://kit.fontawesome.com/31c301b2e4.js" crossorigin="anonymous"></script>
+
+		<!--folding style format link-->
+		<style>
+			.collapsible {
+				background-color: #ffffff;
+				color: #2e2e2e;
+				cursor: pointer;
+				padding: 18px;
+				width: 100%;
+				border: none;
+				text-align: left;
+				outline: none;
+				font-size: 20px;
+				border-radius: 5px;
+			}
+
+			.content {
+				padding: 0;
+				max-height: 0;
+				overflow: hidden;
+				transition: max-height 0.2s ease-out;
+				background-color: #ffffff;
+			}
+			.collapsible:after {
+				content: "▼";
+				color: #2e2e2e;
+				float: right;
+				margin-left: 5px;
+			}
+			.active:after {
+				content: "-";
+			}
+			.collapsible:focus {
+				border: none;
+    			outline:none;
+			}
+
+
+		</style>
+		
+		<script>
+			function collapse(element) {
+				var before = document.getElementsByClassName("active")[0]               // 기존에 활성화된 버튼
+				if (before && document.getElementsByClassName("active")[0] != element) {  // 자신 이외에 이미 활성화된 버튼이 있으면
+					before.nextElementSibling.style.maxHeight = null;   // 기존에 펼쳐진 내용 접고
+					before.classList.remove("active");                  // 버튼 비활성화
+				}
+				element.classList.toggle("active");         // 활성화 여부 toggle
+	
+				var content = element.nextElementSibling;
+				if (content.style.maxHeight != 0) {         // 버튼 다음 요소가 펼쳐져 있으면
+					content.style.maxHeight = null;         // 접기
+				} else {
+					content.style.maxHeight = content.scrollHeight + "px";  // 접혀있는 경우 펼치기
+				}
+			}
+		</script>
+
+	</head>
+<body>
+	
+	<!--PreLoader-->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!--PreLoader Ends-->
+	
+	<!-- header -->
+	<div class="top-header-area" id="sticker">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 text-right">
+					<div class="main-menu-wrap">
+						<!-- logo -->
+						<div class="site-logo">
+							<a href="index_2.html">
+								<img src="assets/img/에볼필름로고(화이트고화질).png"  alt="" width="80%">
+							</a>
+						</div>
+						<!-- logo -->
+
+						<!-- menu start -->
+						<nav class="main-menu">
+							<ul>
+								<li><a class="wedding" href="wedding.html">WEDDING</a></li>
+								<li><a class="couple" href="couple.html">COUPLE</a></li>
+								<li><a class="product" href="product.html">PRODUCT</a></li>
+								<li><a class="notice-nav" href="notice.html">NOTICE</a></li>
+								<li><a class="reservation" href="reservation.html">RESERVATION</a></li>
+								<li>
+										<a class="shopping-cart" href="https://www.instagram.com/evol_film/" target="_blank"><i class="fa-brands fa-instagram"></i></a>								</li>
+										<li>
+										<a class="search-bar-icon" href="https://www.youtube.com/channel/UCG9Ac86pQgcngNjRbhpwZHg" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+
+
+							</ul>
+						</nav>
+						<div class="mobile-menu"></div>
+						<!-- menu end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+
+	<!-- products -->
+<dvi class="notice">
+
+    <h2 class="notice-title">본식DVD</h2>
+	<hr class="line2" />
+    <button type="button" class="collapsible" onclick="collapse(this);">결혼식 사진이 있는데 영상을 꼭 해야 할까요?</button>
+    <div class="content">
+		<p >
+
+			우리는 멋진 풍경이나 맛있는 음식, 귀여운 강아지를 보면 카메라를 꺼내들어 사진을 찍습니다.  <br>그것을 기록하는 이유는 무엇인가요? 지나가버리면 사라지는 현재의 순간을, 그 기쁨을 간직하고 싶어서일 겁니다.<br>
+			<br>
+			인간은 기록의 욕구를 갖고 있습니다. 글에서 그림으로, 사진으로 현재는 영상으로까지 발전했습니다. 
+			<br>
+			결혼식이라는 생애 하루뿐인 날을 기록하고 싶은 것은 당연한 마음이고 그날을 가장 생생하게 기록할 수 있는 방법은 영상입니다.<br>
+			<br>
+			사진으로는 다 담을 수 없는 그날의 분위기, 목소리, 설렘과 긴장 등을 영상으로 기록하여 훗날에 꺼내보아 <br> 자라날 아이들에게도 보여줄 수 있는 좋은 추억이 될 것입니다. 
+			또한 이 영상을 통해 가정이 더 돈독해질 것을 믿고 소망합니다.<br>
+			<br>
+			결혼식이 끝나고 나면 순백의 드레스도, 화려한 불빛도, 아름다운 꽃송이들도 다 사라지겠지만 평생 기억될 영상이 남을 것입니다.<br> 신랑 신부님의 가장 현명한 선택이 될 것이라 확신하며 소중한 날에 초대해 주심에 감사하는 마음으로 에볼필름이 최선을 다하겠습니다.<br>
+			<br>
+			- 에볼필름 -</p><br>
+    </div>
+	<hr class="line2" />
+</dvi>
+<dvi class="notice2">
+
+    <h2 class="notice-title">계약관련사항</h2>
+	<hr class="line2" />
+    <button type="button" class="collapsible" onclick="collapse(this);">1. 예약 진행은 어떻게 되나요?</button>
+    <div class="content">
+		<ul class="content-list" >
+			<li>톡 채널로 예식 날짜, 시간, 지역을 알려주시면 예약 가능 여부 확인해 드립니다.</li>
+			<li>예약 가능 시 계약 신청서 작성해 주시고 계약금 15만원 입금해 주시면 예약이 확정됩니다.<br>
+				계좌: (카카오뱅크) 3333-29-6644447 / 예금주 : 에볼필름<br><br>
+				<span>구두계약은 성립되지 않습니다.<br>
+				미입금 시 예약이 확정되지 않으며 문의가 겹치는 경우 먼저 입금하시는 분 우선으로 최종 예약이 확정됩니다.</span></li><br>
+			<li>예약이 확정되면 안내 메시지와 함께 상담이 진행됩니다.</li>
+			<li>예식 일주일 이내 확인 연락을 통해 자세한 식순, 이벤트 촬영 관련 상담이 진행됩니다.</li>
+		</ul>
+    </div>
+	<hr class="line2" />
+    <button type="button" class="collapsible" onclick="collapse(this);">2. 예식 상담과 잔금 결제는 언제 하나요?</button>
+    <div class="content">
+		<p>
+			예식 일주일 이내 식순, 이벤트 촬영 관련 상담 진행됩니다.<br>
+			잔금은 예식 전날까지 완료해 주시면 됩니다.
+		</p>
+    </div>
+	<hr class="line2" />
+    <button type="button" class="collapsible" onclick="collapse(this);">3. 예약취소 및 환불 위약금이 있나요?</button>
+    <div class="content">
+		<p>
+			예약취소 및 환불은 계약금 입금 후 7일 이내에 가능하며 이후 계약금 환불이 불가능합니다.<br><br>
+
+			환불 및 위약금은 약관을 참고해 주시기 바랍니다.
+		</p>
+    </div>
+	<hr class="line2" />
+	<button type="button" class="collapsible" onclick="collapse(this);">4. 카드 결제도 가능한가요?</button>
+    <div class="content">
+		<p>에볼필름 모든 상품은 부가세 10% 포함입니다.<br>
+			카드 결제 가능하며 현금결제 시 현금영수증 발행해 드립니다.
+		</p>
+    </div>
+	<hr class="line2" />
+</dvi>
+
+<dvi class="notice2">
+
+    <h2 class="notice-title">촬영관련사항</h2>
+	<hr class="line2" />
+    <button type="button" class="collapsible" onclick="collapse(this);">1. 본식 촬영은 언제부터 언제까지인가요?</button>
+    <div class="content">
+		<p>
+			촬영 시작은 본식 시작 1시간 30분 전부터 외관, 로비, 신부대기실로 진행됩니다.<br>
+			촬영 마무리는 원판 촬영까지이며 프리미엄 상품 선택 시 연회장 촬영까지 진행됩니다.<br>
+			옵션으로 연회장, 인터뷰, 2부 촬영을 선택하신 경우 그와 같이 진행됩니다.
+		</p>
+    </div>
+	<hr class="line2" />
+    <button type="button" class="collapsible" onclick="collapse(this);">2. 부모님 모습을 많이 담고 싶어요</button>
+    <div class="content">
+		<p>
+			1인 촬영(베이직, 시그니처)은 신랑신부에 집중되어 있기 때문에 부모님과 하객분들 모습을 담는데 제한적일 수밖에 없습니다.<br>
+			2인 촬영(프리미엄)을 선택해 주시면 부모님과 하객분들의 모습을 더 잘 담을 수 있으니 프리미엄 상품을 추천드립니다.
+		</p>
+    </div>
+	<hr class="line2" />
+</dvi>
+
+<dvi class="notice2">
+
+    <h2 class="notice-title">제작관련사항</h2>
+	<hr class="line2" />
+    <button type="button" class="collapsible" onclick="collapse(this);">1. 영상은 촬영 후 언제 받아볼 수 있나요?</button>
+    <div class="content">
+		<p>
+			예식 후 최대 6주 이내로 전달드립니다. 베이직 상품은 메일로 전송해 드리며<br>
+			시그니처, 프리미엄 상품은 USB에 포장하여 택배로 배송해 드리기 때문에 배송기간이 추가될 수 있습니다.
+		</p>
+    </div>
+	<hr class="line2" />
+    <button type="button" class="collapsible" onclick="collapse(this);">2. 편집 수정은 가능한가요?</button>
+    <div class="content">
+		<p>
+			수정에 대한 결정은 상품을 수령 받으신 기점으로 1주일 이내에 요청해주셔야 하며,<br>
+			음악변경과 구성 변경에 대한 수정은 불가합니다. 간단한 요청 즉 장면 삭제나 변경 정도만 가능합니다.
+		</p>
+    </div>
+	<hr class="line2" />
+	<button type="button" class="collapsible" onclick="collapse(this);">3. 하이라이트 음원 선택이 가능한가요?</button>
+    <div class="content">
+		<p>
+			원하시는 음원은 예식 전 전달해주셔야 하며 저작권 문제가 없는 음원만 가능합니다.<br>
+			또한 영상 스타일과 맞지 않는 음원은 사용이 어려울 수 있습니다. <br>
+			에볼필름은 예식 분위기와 촬영결과물에 맞는 최적의 음원을 선택하여 편집을 진행하고 있습니다.
+		</p>
+    </div>
+	<hr class="line2" />
+	<button type="button" class="collapsible" onclick="collapse(this);">4. 원본 영상은 제공이 되나요?</button>
+    <div class="content">
+		<p>
+			제공드리는 풀영상은 불필요한 부분(카메라가 이동하는 부분)은 제외하고 편집한 영상이기 때문에<br>
+			원본과 거의 동일하다고 보시면 됩니다.<br>
+			또한 원본은 용량이 매우 크기 때문에 고객님께서 직접 300G 이상의 하드를 예식 당일 전달해주시면<br>
+			무료로 제공드리며, 에볼필름에서 제공하는 하드에 넣어 배송해 드릴 시 5만원의 추가금이 발생합니다.
+		</p>
+    </div>
+	<hr class="line2" />
+</dvi>
+
+	<!-- end products -->
+
+
+	  	<!--consulting icon-->
+		  <dvi class="consulting">
+			<a href="http://pf.kakao.com/_dxfxnfG/chat" target="_blank"> <img class="kakao" src="assets/img/카카오톡 연결.svg"> </a>
+		</dvi>
+		<!--end consulting icon-->
+	
+	
+		<!-- footer -->
+		<div class="footer-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-4">
+						<div class="footer-box about-widget">
+							<h1 class="widget-title">EVOLFILM</h1>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-1">
+						<div class="footer-box get-in-touch">
+							<h2 class="widget-title" style="display:inline;"></h2>
+							<P style="display:inline;"></P>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-1">
+						<div class="footer-box get-in-touch">
+							<h2 class="widget-title" style="display:inline;">DIRECTOR</h2>
+							<P style="display:inline;">Eunji Ham, Younghun Jeong</P>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-1">
+						<div class="footer-box pages">
+							<h2 class="widget-title" style="display:inline;">BUSINESS LICENSE</h2>
+							<P style="display:inline;">130-72-00517</P>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-1">
+						<div class="footer-box subscribe">
+							<h2 class="widget-title" style="display:inline;">MOBILE</h2>
+							<p style="display:inline;">010-8696-5125, 010-2682-9375</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-1">
+						<div class="footer-box subscribe">
+							<h2 class="widget-title" style="display:inline;">E.MAIL</h2>
+							<p style="display:inline;">ejham@evolfilm.com, yhjeong@evolfilm.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end footer -->
+		
+		<!-- copyright -->
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-12">
+						<p>Copyrights &copy; 2024 - <a href="https://www.evolfilm.com">EVOLFILM</a>,  All Rights Reserved.</p>
+					</div>
+					<div class="col-lg-6 text-right col-md-12">
+						<div class="social-icons">
+							<ul>
+								<li><a href="https://www.youtube.com/channel/UCG9Ac86pQgcngNjRbhpwZHg" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+								<li><a href="https://www.instagram.com/evol_film/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="https://www.evolfilm.com" target="_blank"><i class="fa-solid fa-house"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end copyright -->
+	
+	<!-- jquery -->
+	<script src="assets/js/jquery-1.11.3.min.js"></script>
+	<!-- bootstrap -->
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- count down -->
+	<script src="assets/js/jquery.countdown.js"></script>
+	<!-- isotope -->
+	<script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
+	<!-- waypoints -->
+	<script src="assets/js/waypoints.js"></script>
+	<!-- owl carousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- magnific popup -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- mean menu -->
+	<script src="assets/js/jquery.meanmenu.min.js"></script>
+	<!-- sticker js -->
+	<script src="assets/js/sticker.js"></script>
+	<!-- main js -->
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>
